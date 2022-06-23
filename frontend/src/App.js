@@ -11,13 +11,13 @@ import RegistrationScreen from './screens/RegistrationScreen';
 
 // Components 
 import Navbar from './components/Navbar';
-
+import Backdrop from './components/Backdrop';
 function App() {
   return (
     <Router>
       <Navbar />
       {/*SideDrawer */}
-      {/*Backdrop */}
+      <Backdrop />
       <main>
         <Routes>
           <Route exact path="/" component={HomeScreen}/>

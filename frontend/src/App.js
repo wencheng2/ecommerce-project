@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
+// Screens
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
+import CartScreen from './screens/CartScreen';
+import InvoiceScreen from './screens/InvoiceScreen';
+import PaymentScreen from './screens/PaymentScreen';
+import RegistrationScreen from './screens/RegistrationScreen';
+
+// Components 
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      {/*SideDrawer */}
+      {/*Backdrop */}
+      <main>
+        <Routes>
+          <Route exact path="/" component={HomeScreen}/>
+          <Route exact path="/product/:id" component={ProductScreen}/>
+          <Route exact path="/cart" component={CartScreen} />
+          <Route exact path="/payment" component={PaymentScreen} />
+          <Route exact path="/registration" component={RegistrationScreen} />
+          <Route exact path="/invoice" component={InvoiceScreen} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 

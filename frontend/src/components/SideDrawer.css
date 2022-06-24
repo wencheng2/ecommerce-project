@@ -13,3 +13,9 @@
 .sidedrawer.show {
   transform: translateX(0);
 }
+
+.sidedrawer__links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}

@@ -19,7 +19,6 @@
   display: flex;
   list-style: none;
   align-items: center;
-  text-align: left;
 }
 
 .navbar__links > li {

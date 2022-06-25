@@ -24,10 +24,20 @@
     "react-scripts": "^5.0.1",
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.4.1"
+    "redux-thunk": "^2.4.1",
+    "selenium-webdriver": "^4.3.0"
   },
   "devDependencies": {
     "concurrently": "^7.2.2",
+    "jest": "^28.1.1",
     "nodemon": "^2.0.16"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wencheng2/ecommerce-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wencheng2/ecommerce-project/issues"
+  },
+  "homepage": "https://github.com/wencheng2/ecommerce-project#readme"
 }

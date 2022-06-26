@@ -1,5 +1,6 @@
 import "./RegistrationScreen.css";
 
+
 const RegistrationScreen = () => {
   return (
     <div className="registrationscreen">

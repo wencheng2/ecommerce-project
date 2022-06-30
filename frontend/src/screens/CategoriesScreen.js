@@ -1,11 +1,26 @@
 import "./CategoriesScreen.css";
 
-const CategoriesScreen = () => {
+// Components
+import Product from '../components/Product';
+
+const CategorieScreen = () => {
   return (
     <div className="categoriesscreen">
-      Categories Screen
+      <h2 className="categoriesscreen__title">Latest Products</h2>
+
+      <div className="categoriesscreen__products">
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+      </div>
     </div>
   )
-}
+};
 
-export default CategoriesScreen
+export default CategorieScreen

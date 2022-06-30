@@ -1,24 +1,15 @@
 import "./HomeScreen.css";
-import Product from './Product';
+import { Link } from "react-router-dom";
 
 const HomeScreen = () => {
   return (
     <div className="homescreen">
-      <h2 className="homescreen__title">Latest Products</h2>
-
-      <div className="homescreen__products">
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-      </div>
+      <p>Home Screen</p>
+      <Link to="/categories">
+        Categories
+      </Link>
     </div>
   )
-};
+}
 
 export default HomeScreen

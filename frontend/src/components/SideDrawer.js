@@ -23,6 +23,12 @@ const SideDrawer = ({ show, click }) => {
         <li>
           <Link to="/">Shop</Link>
         </li>
+        <li>
+          <Link to="/categories">Products</Link>
+        </li>
+        <li>
+          <Link to="/registration">Delivery</Link>
+        </li>
       </ul>
     </div>
   );

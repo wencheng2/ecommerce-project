@@ -15,6 +15,8 @@ import DeliveryScreen from './screens/DeliveryScreen';
 import Navbar from './components/Navbar';
 import SideDrawer from './components/SideDrawer';
 import Backdrop from './components/Backdrop';
+import Footer from './components/Footer';
+
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
@@ -24,7 +26,7 @@ function App() {
       <Navbar click={() => setSideToggle(true)} />
       <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
       <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
-      <main>
+      <main className="container">
         <Routes>
           <Route exact path="/" element={<HomeScreen/>}/>
           <Route exact path="/categories" element={<CategoriesScreen/>}/>
@@ -35,6 +37,9 @@ function App() {
           <Route exact path="/bill" element={<BillScreen/>} />
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </Router>
   );
 }
